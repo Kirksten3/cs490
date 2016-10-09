@@ -1,0 +1,2 @@
+module LongboardsHelper
+end
