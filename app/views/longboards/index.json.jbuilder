@@ -1,0 +1,1 @@
+json.array! @longboards, partial: 'longboards/longboard', as: :longboard

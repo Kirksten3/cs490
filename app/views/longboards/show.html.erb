@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @longboard.name %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @longboard.length %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @longboard.style %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @longboard.manufacturer %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @longboard.purpose %>
+</p>
+
+<p>
+  <strong>Is available:</strong>
+  <%= @longboard.is_available %>
+</p>
+
+<%= link_to 'Edit', edit_longboard_path(@longboard) %> |
+<%= link_to 'Back', longboards_path %>

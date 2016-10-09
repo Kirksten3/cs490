@@ -1,0 +1,1 @@
+json.partial! "longboards/longboard", longboard: @longboard
