@@ -1,3 +1,11 @@
+production:
+  clients:
+    default:
+      database: cloud_production
+      uri: ENV['MONGODB_URI']
+      options:
+        connect_timeout: 15
+
 development:
   # Configure available database clients. (required)
   clients:
@@ -8,9 +16,8 @@ development:
       database: cloud_development
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
-      uri: ENV['MONGODB_URI']
-      #hosts:
-        #- localhost:27017
+      hosts:
+        - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
