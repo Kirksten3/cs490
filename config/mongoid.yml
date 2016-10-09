@@ -1,8 +1,8 @@
 production:
   clients:
     default:
-      database: cloud_production
-      uri: ENV['MONGODB_URI']
+      #database: cloud_production
+      uri: <%= ENV['MONGODB_URI'] %>
       options:
         connect_timeout: 15
 
